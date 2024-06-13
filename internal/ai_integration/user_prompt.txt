@@ -1,0 +1,4 @@
+I have a specific address and I need to convert it into a Google Maps embed URL. Please generate the embed URL in the following format:
+https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d[distance]!2d[longitude]!3d[latitude]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s[place_id]!2s[address]!5e0!3m2!1ses-419!2sco!4v[timestamp]!5m2!1ses-419!2sco
+Here is the address: '%s'
+RESPONSE only WITH the GOOGLE URL, nothing more.
