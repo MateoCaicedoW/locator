@@ -53,6 +53,8 @@ var (
 	// that will be used by the application based on the driver and
 	// connection string.
 	DB = db.ConnectionFn(DatabaseURL, db.WithDriver("sqlite3"))
+
+	AIKey = envor.Get("AI_KEY", "")
 )
 
 // AddRoutes mounts the routes for the application,

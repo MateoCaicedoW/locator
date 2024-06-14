@@ -4,7 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+
 	"net/http"
+
+	"github.com/leapkit/core/envor"
 )
 
 type requestMessage struct {
@@ -29,7 +32,7 @@ func (req *developmentRequest) Send(client *http.Client) (string, error) {
 		return "", err
 	}
 
-	r.Header.Add("Authorization", "Bearer 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")
+	r.Header.Add("Authorization", "Bearer "+envor.Get("AI_KEY", ""))
 	r.Header.Add("Content-Type", "application/json")
 
 	resp, err := client.Do(r)
